@@ -4002,10 +4002,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:XC6206PxxxMR"
-			(pin_names
-				(offset 0.254)
-			)
+		(symbol "Regulator_Linear:AMS1117-3.3"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4021,7 +4018,7 @@
 					)
 				)
 			)
-			(property "Value" "XC6206PxxxMR"
+			(property "Value" "AMS1117-3.3"
 				(at 0 3.175 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4032,19 +4029,29 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-				(at 0 5.715 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 				)
 			)
-			(property "Datasheet" "https://www.torexsemi.com/file/xc6206/XC6206.pdf"
+			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+				(at 2.54 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4055,7 +4062,7 @@
 					)
 				)
 			)
-			(property "Description" "Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23"
+			(property "ki_keywords" "linear regulator ldo fixed positive"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4066,7 +4073,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "Torex LDO Voltage Regulator Fixed Positive"
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4077,21 +4084,10 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23?3*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "XC6206PxxxMR_0_1"
+			(symbol "AMS1117-3.3_0_1"
 				(rectangle
-					(start -5.08 1.905)
-					(end 5.08 -5.08)
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -4101,7 +4097,7 @@
 					)
 				)
 			)
-			(symbol "XC6206PxxxMR_1_1"
+			(symbol "AMS1117-3.3_1_1"
 				(pin power_in line
 					(at 0 -7.62 90)
 					(length 2.54)
@@ -17660,7 +17656,7 @@
 				)
 			)
 		)
-		(property "Value" "Fuse"
+		(property "Value" "500mA polyfuse"
 			(at 443.738 99.568 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17703,7 +17699,7 @@
 				)
 			)
 		)
-		(property "JLCPCB part#" " C3035895"
+		(property "JLCPCB part#" "C2685389"
 			(at 443.738 102.108 90)
 			(hide yes)
 			(show_name no)
@@ -17714,7 +17710,7 @@
 				)
 			)
 		)
-		(property "Comment" " 6V 500mA 100mA 1A 0805 Resettable Fuses ROHS"
+		(property "Comment" "6V 500mA hold / 1A trip 1206 Resettable Polyfuse — VERIFY footprint matches before fab"
 			(at 443.738 102.108 90)
 			(hide yes)
 			(show_name no)
@@ -18277,7 +18273,7 @@
 				)
 			)
 		)
-		(property "Value" "16MHz"
+		(property "Value" "12MHz"
 			(at 415.163 227.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18331,7 +18327,7 @@
 				)
 			)
 		)
-		(property "Comment" " 8MHz 12pF ±10ppm SMD3225-4P Crystals ROHS"
+		(property "Comment" " 12MHz 12pF ±10ppm SMD3225-4P Crystals ROHS — VERIFY JLCPCB part is 12MHz"
 			(at 411.988 222.25 0)
 			(hide yes)
 			(show_name no)
@@ -21213,7 +21209,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:XC6206PxxxMR")
+		(lib_id "Regulator_Linear:AMS1117-3.3")
 		(at 474.218 102.108 0)
 		(unit 1)
 		(body_style 1)
@@ -21225,7 +21221,7 @@
 		(fields_autoplaced yes)
 		(uuid "541cea43-6563-44c4-a1d8-64f0487fadbb")
 		(property "Reference" "U1"
-			(at 474.218 95.758 0)
+			(at 474.218 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21235,7 +21231,7 @@
 			)
 		)
 		(property "Value" "XC6206PxxxMR"
-			(at 474.218 98.298 0)
+			(at 474.218 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21245,18 +21241,28 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 474.218 96.393 0)
+			(at 474.218 97.028 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
 			)
 		)
-		(property "Datasheet" "https://www.torexsemi.com/file/xc6206/XC6206.pdf"
+		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+			(at 476.758 108.458 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
 			(at 474.218 102.108 0)
 			(hide yes)
 			(show_name no)
@@ -21267,18 +21273,7 @@
 				)
 			)
 		)
-		(property "Description" "Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23"
-			(at 474.218 102.108 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB part#" "C15850"
+		(property "JLCPCB part#" "C6186"
 			(at 474.218 102.108 0)
 			(hide yes)
 			(show_name no)
